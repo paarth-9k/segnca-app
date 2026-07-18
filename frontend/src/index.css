@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html, body {
+  background: #0a0e13;
+  color: #e6edf3;
+}
+
+body {
+  font-family: "IBM Plex Sans", ui-sans-serif, system-ui;
+}
+
+::selection {
+  background: #e0524f;
+  color: #0a0e13;
+}
+
+.font-display {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  letter-spacing: -0.01em;
+}
+
+/* eyebrow / route-label structural device */
+.route-label {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  color: #5eead4;
+  opacity: 0.75;
+}
+
+.card {
+  background: #0f151c;
+  border: 1px solid #1f2a37;
+  border-radius: 10px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 3px;
+  border-radius: 999px;
+  background: #1f2a37;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 999px;
+  background: #e6edf3;
+  border: 2px solid #0a0e13;
+  cursor: pointer;
+  margin-top: -5.5px;
+}
+input[type="range"]::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border-radius: 999px;
+  background: #e6edf3;
+  border: 2px solid #0a0e13;
+  cursor: pointer;
+}
